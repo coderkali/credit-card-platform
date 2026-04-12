@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Platform - Test Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Credit Card Issuer Platform</h1>
+            <p class="subtitle">AWS Infrastructure Testing</p>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h2>Welcome</h2>
+                <p>This is a static website hosted on AWS S3. It's being used to test S3 bucket configuration and Terraform automation.</p>
+            </section>
+
+            <section class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>✅ VPC Infrastructure</li>
+                    <li>✅ S3 Static Hosting</li>
+                    <li>✅ Terraform Automation</li>
+                    <li>✅ AWS CloudFront Integration</li>
+                </ul>
+            </section>
+
+            <section class="status">
+                <h2>Status</h2>
+                <div class="status-box">
+                    <p><strong>Infrastructure:</strong> In Development</p>
+                    <p><strong>Last Updated:</strong> <span id="date"></span></p>
+                    <p><strong>Region:</strong> us-east-1</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Credit Card Platform. Hosted on AWS S3.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
